@@ -1,0 +1,99 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    position: relative;
+}
+
+i {
+    font-size: 2rem;
+    color: white;
+    border-radius: 10px;
+}
+
+ul {
+    margin-top: 30px;
+    list-style: none;
+
+}
+
+li {
+    border: 15px;
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+header {
+    background-color: black;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+}
+
+.tiktok {
+    background-color: black !important;
+}
+
+.whats {
+    background-color: green;
+}
+
+.insta {
+    background-color: rgb(135, 41, 158);
+}
+
+.face {
+    background-color: blue;
+}
+
+img {
+    width: 200px;
+    /* Initial width */
+    height: 200px;
+    /* Initial height */
+    position: absolute;
+
+    animation-name: myAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    opacity: 0;
+    /* Start with 0 opacity */
+}
+
+@keyframes myAnimation {
+    0% {
+        transform: scale(0);
+        /* Start with scale 0 */
+        top: 80%;
+        left: 25%;
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.5);
+        /* Scale up */
+        opacity: 1;
+        /* Full opacity */
+    }
+
+    100% {
+        transform: scale(0);
+        /* Scale back to 0 */
+        top: 80%;
+        left: 25%;
+        opacity: 0;
+    }
+}
